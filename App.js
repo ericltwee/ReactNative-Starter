@@ -1,7 +1,8 @@
 import React from "react";
 
-import Home from "./components/Home";
+import SwipePages from "./components/SwipePages";
+import Login from "./components/Login";
 
 export default function App() {
-  return <Home />;
+  return <Login />;
 }

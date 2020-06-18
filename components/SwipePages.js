@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { StyleSheet, Text, View, ScrollView, Dimensions } from "react-native";
 import Login from "./Login";
 
-export default class Home extends Component {
+export default class SwipePages extends Component {
   render() {
     return (
       <ScrollView horizontal={true} pagingEnabled={true}>
@@ -31,6 +31,7 @@ const styles = StyleSheet.create({
     width: Dimensions.get("window").width,
     height: Dimensions.get("window").height,
   },
+
   text: {
     color: "black",
     fontSize: 25,
@@ -46,6 +47,6 @@ const styles = StyleSheet.create({
     backgroundColor: "#c7fca1",
   },
   darkbox: {
-    backgroundColor: "#021a22",
+    backgroundColor: "#000514",
   },
 });
