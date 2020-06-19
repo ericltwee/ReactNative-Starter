@@ -5,8 +5,9 @@ import {
   StyleSheet,
   TextInput,
   TouchableOpacity,
+  Dimensions,
 } from "react-native";
-
+///////////////////////////////////////////////////////       FOR LOGIN.Js            ////////////////////////////////////////
 export default class Form extends Component {
   render() {
     return (
@@ -31,9 +32,10 @@ export default class Form extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    // flex: 1,
   },
   input: {
+    width: Dimensions.get("window").width - 70,
     height: 50,
     backgroundColor: "#fff",
     padding: 10,

@@ -1,40 +1,45 @@
 import React, { Component } from "react";
-import { Text, View, StyleSheet, Image, StatusBar } from "react-native";
+import {
+  Text,
+  View,
+  StyleSheet,
+  Image,
+  StatusBar,
+  KeyboardAvoidingView,
+  Dimensions,
+} from "react-native";
 
 import Form from "./Form";
 
 export default class Login extends Component {
   render() {
     return (
-      <View style={styles.wall}>
-        <StatusBar barStyle="light-content" backgroundColor="#1de8f7" />
-        <View style={styles.container}>
+      <KeyboardAvoidingView behavior={"padding"}>
+        <StatusBar barStyle="light-content" backgroundColor="#2b2b2b" />
+
+        <View style={styles.wall}>
           <Image source={require("../assets/logo192.png")} />
           <Text style={styles.title}>App Name</Text>
         </View>
-        <View style={styles.image}>
+        <View>
           <Form />
         </View>
-      </View>
+      </KeyboardAvoidingView>
     );
   }
 }
 
 const styles = StyleSheet.create({
   wall: {
-    backgroundColor: "#000514",
-    flex: 1,
-  },
-  container: {
-    flex: 1,
     justifyContent: "center",
     alignItems: "center",
+    backgroundColor: "#000514",
   },
-  image: {
-    flex: 1,
-  },
+
   title: {
+    fontSize: 30,
     color: "#1de8f7",
     fontWeight: "bold",
+    textAlign: "center",
   },
 });

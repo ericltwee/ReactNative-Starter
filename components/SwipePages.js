@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { StyleSheet, Text, View, ScrollView, Dimensions } from "react-native";
 import Login from "./Login";
+import HKimages from "./HKimages";
 
 export default class SwipePages extends Component {
   render() {
@@ -18,6 +19,9 @@ export default class SwipePages extends Component {
         <View style={[styles.container, styles.darkbox]}>
           <Login />
         </View>
+        <View style={[styles.container2]}>
+          <HKimages />
+        </View>
       </ScrollView>
     );
   }
@@ -25,6 +29,13 @@ export default class SwipePages extends Component {
 
 const styles = StyleSheet.create({
   container: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+    width: Dimensions.get("window").width,
+    height: Dimensions.get("window").height,
+  },
+  container2: {
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
